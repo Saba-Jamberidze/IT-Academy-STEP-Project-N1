@@ -1,0 +1,99 @@
+main {
+  width: 100%;
+  height: 1894px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main h1 {
+  font-size: 80px;
+  font-family: Oswald-Medium;
+  font-weight: 500;
+  letter-spacing: -2px;
+  padding-bottom: 15px;
+}
+main section {
+  padding: 37px 0;
+  border-top: 1px solid #ffecce;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+main section h2 {
+  font-size: 36px;
+  font-family: Oswald-Medium;
+  font-weight: 500;
+  letter-spacing: -1.2px;
+}
+main section .m-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 39px;
+}
+main section .m-div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main section .m-div div .header {
+  font-family: Oswald-Medium;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+main section .m-div div .main {
+  font-family: Maitree;
+  margin-bottom: 10px;
+}
+main section .m-div div .cost {
+  font-family: Maitree;
+}
+
+@media (max-width: 767px) {
+  main {
+    height: auto;
+    padding-top: 5vw;
+  }
+  main h1 {
+    font-size: 15vw;
+    letter-spacing: -0.3vw;
+    padding-bottom: 10vw;
+  }
+  main section {
+    padding: 10vw 0;
+    width: 89vw;
+    gap: 6vw;
+  }
+  main section h2 {
+    font-size: 8vw;
+    letter-spacing: -0.3vw;
+  }
+  main section .m-div {
+    gap: 10vw;
+  }
+  main section .m-div div .header {
+    margin-bottom: 3vw;
+    font-size: 5vw;
+  }
+  main section .m-div div .main {
+    font-size: 5vw;
+    margin-bottom: 3vw;
+    text-align: center;
+  }
+  main section .m-div div .cost {
+    font-size: 5vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  main {
+    height: auto;
+  }
+  main section {
+    width: 90vw;
+  }
+}/*# sourceMappingURL=our-menu-style.css.map */

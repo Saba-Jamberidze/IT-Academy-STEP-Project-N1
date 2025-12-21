@@ -1,0 +1,116 @@
+main{
+    width: 100%;
+    height: 1894px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 80px;
+        font-family: Oswald-Medium;
+        font-weight: 500;
+        letter-spacing: -2px;
+        padding-bottom: 15px;
+    }
+    section{
+        padding: 37px 0;
+        border-top: 1px solid #ffecce;
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        h2{
+            font-size: 36px;
+            font-family: Oswald-Medium;
+            font-weight: 500;
+            letter-spacing: -1.2px;
+        }
+        
+        .m-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 39px;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            
+                .header{
+                    font-family: Oswald-Medium;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+                .main{
+                    font-family: Maitree;
+                    margin-bottom: 10px;
+                }
+                .cost{
+                    font-family: Maitree;
+                }
+            
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    main{
+        height: auto;
+        padding-top: 5vw;
+        h1{
+            font-size: 15vw;
+            letter-spacing: -0.30vw;
+            padding-bottom: 10vw;
+        }
+
+        section{
+            padding: 10vw 0;
+            width: 89vw;
+            gap: 6vw;
+
+            h2{
+                font-size: 8vw;
+                letter-spacing: -0.30vw;
+            }
+
+            .m-div{
+                gap: 10vw;
+
+                div{
+                    .header{
+                        margin-bottom: 3vw;
+                        font-size: 5vw;
+                    }
+                    .main{
+                        font-size: 5vw;
+                        margin-bottom: 3vw;
+                        text-align: center;
+                    }
+                    .cost{
+                        font-size: 5vw;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    main{
+        height: auto;
+        section{
+            width: 90vw;
+        }
+    }
+    
+}

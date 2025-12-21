@@ -1,0 +1,31 @@
+h1, h2, h3, span, p {
+  clip-path: inset(100% 0 0 0);
+  animation: fillFromBottom 1.5s ease-in-out both;
+}
+
+.sect-5, nav, a, img {
+  animation: fadeIn 1.5s ease-in-out both;
+}
+
+.about-svg {
+  animation: none;
+}
+
+@keyframes fillFromBottom {
+  0% {
+    clip-path: inset(100% 0 0 0);
+    opacity: 1;
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=animations.css.map */
