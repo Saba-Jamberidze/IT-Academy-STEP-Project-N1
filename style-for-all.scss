@@ -56,6 +56,13 @@ a{
 
 // ----------------------------------------------------------------------------------------------------------------
 
+
+
+
+// main{
+//     overflow-x: hidden;
+// }
+
 nav{
     font-family: Oswald-Medium;
     display: flex;
@@ -100,6 +107,12 @@ nav{
             width: 31px;
             fill: #ffecce;
         }
+    }
+
+    .burger-container .burger-nav{
+        z-index: 1000;
+        background-color: #984029;
+        overflow-y: scroll;
     }
 }
 
@@ -174,11 +187,19 @@ footer{
 
 @media (max-width: 767px){
     .NO{display: none;}
+
+    // ის ფაქტი რომ ნავიგაცია არ იყო z-index-ის მიუხედავად ზემოდან პრობლემა არის აქ
+    // შენ გეწერა მეინზე ინდექსი ერთი ეს და მეორე ის რომ აქვე nav გქონდა გადაკეთებული სტატიკზე
+    // რა დროსაც ნავის და მისი შვილების z-index ვეღარ მუშაობდა
     main{
-        z-index: 1;
+        // z-index: 1;
+        margin-top: 21.627vw;
     }
+
+
     nav{
-        position: static;
+        position: fixed; // აქ გეწერა static და თან არ გეწერა top
+        top: 0px;
         height: 21.627vw;
         .nav-logo-1, .main, .nav-logo-2{
             display: none;
@@ -237,7 +258,7 @@ footer{
                 gap: 10px;
                 font-size: 0;
 
-                z-index: 1000 !important;
+                z-index: 1000;
                 .X{
                     width: 100%;
                     text-align: end;

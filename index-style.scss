@@ -676,7 +676,7 @@ main{
             }
 
             form{
-                width: 100vw;
+                width: 100%; // ეს არის პრობლემა რაც ჰორიზონტალურ სქროლს აჩენს ჯობია რომ %-ით ჩაწერო და არა vw
                 display: flex;
                 flex-direction: column;
                 gap: 10vw;

@@ -92,6 +92,11 @@ nav .nav-logo-2 .nav-logo-2-svg {
   width: 31px;
   fill: #ffecce;
 }
+nav .burger-container .burger-nav {
+  z-index: 1000;
+  background-color: #984029;
+  overflow-y: scroll;
+}
 
 .NO {
   height: 81px;
@@ -160,10 +165,11 @@ footer .f-m-2 ul .f-li-last a {
     display: none;
   }
   main {
-    z-index: 1;
+    margin-top: 21.627vw;
   }
   nav {
-    position: static;
+    position: fixed;
+    top: 0px;
     height: 21.627vw;
   }
   nav .nav-logo-1, nav .main, nav .nav-logo-2 {
@@ -215,7 +221,7 @@ footer .f-m-2 ul .f-li-last a {
     align-items: center;
     gap: 10px;
     font-size: 0;
-    z-index: 1000 !important;
+    z-index: 1000;
   }
   nav .burger-container .burger-nav .X {
     width: 100%;
